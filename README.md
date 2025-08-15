@@ -2,6 +2,9 @@
 
 **ScreenMeasure** — lightweight desktop utility for Windows that allows you to calibrate scale using a known length and accurately measure segments and polylines on any image/screenshot. All measurements remain on the picture with a length label.
 
+![screenshot](screenshot.png)
+
+
 ## Why
 - Quick measurements on drawings, diagrams, screenshots, photos.
 - Matching real object sizes using a reference (ruler in photo, known span, etc.).
