@@ -1,0 +1,21 @@
+Инструкция по сборке ScreenMeasure с иконкой:
+
+1. Убедитесь, что у вас установлен PySide6:
+   pip install PySide6
+
+2. Скопируйте ваш файл иконки icon2.ico в эту папку (если еще не сделано)
+
+3. Скомпилируйте файл ресурсов (это создаст файл resources_rc.py):
+   pyside6-rcc resources.qrc -o resources_rc.py
+
+4. Запустите приложение для тестирования:
+   python screen_measure(9).py
+
+5. Для сборки .exe файла с иконкой используйте Auto Py to Exe:
+   - Откройте Auto Py to Exe
+   - Укажите screen_measure(9).py как основной файл
+   - Во вкладке "Advanced" -> "Icon" укажите путь к icon2.ico
+   - Нажмите "Convert .py to .exe"
+
+Альтернативный способ сборки через командную строку:
+pyinstaller --onefile --windowed --icon=icon2.ico screen_measure(9).py
